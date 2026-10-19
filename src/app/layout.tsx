@@ -6,6 +6,7 @@ import Analytics from "@/components/Analytics";
 import PageLoader from "@/components/PageLoader";
 import { absoluteUrl, site } from "@/lib/site";
 import "leaflet/dist/leaflet.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
