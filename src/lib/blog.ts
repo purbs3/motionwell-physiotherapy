@@ -230,51 +230,6 @@ export const blogPosts: BlogPost[] = [
           "Seek urgent medical attention for sudden weakness, chest pain, a major injury, difficulty breathing or severe, rapidly worsening symptoms. New numbness or weakness, pain spreading down an arm, or symptoms accompanied by fever or feeling very unwell should be assessed promptly by a healthcare professional, who can advise on urgency based on the full picture."
         ]
       },
-      {
-        slug: "back-pain-and-home-physiotherapy",
-        title: "Back Pain: When Can Home Physiotherapy Help?",
-        excerpt:
-          "Understand how an individual assessment can help guide movement, activity and home-based physiotherapy decisions.",
-        category: "Back Pain",
-        readTime: "4 min read",
-        serviceSlug: "back-neck-pain",
-        paragraphs: [
-          "Back pain can have many causes. The right next step depends on your symptoms, medical history and how the pain affects everyday activities.",
-          "A physiotherapist may assess movement, daily activities and functional goals before discussing an appropriate plan. Treatment can include education and individually selected exercises where suitable.",
-          "Seek urgent medical assessment for back pain accompanied by new bladder or bowel problems, numbness around the groin or saddle area, or rapidly worsening leg weakness.",
-          "Before arranging a home visit, discuss your symptoms, location and any relevant instructions from your treating clinician.",
-        ],
-      },
-      {
-        slug: "neck-stiffness-and-daily-movement",
-        title: "Neck Stiffness: Understanding Your Movement Options",
-        excerpt:
-          "Learn why neck stiffness needs individual assessment and how movement goals can be discussed with a physiotherapist.",
-        category: "Neck Pain",
-        readTime: "4 min read",
-        serviceSlug: "back-neck-pain",
-        paragraphs: [
-          "Neck stiffness can be associated with posture, prolonged activity, injury or other health conditions. It is not possible to determine the cause from stiffness alone.",
-          "A physiotherapist can discuss your symptoms, daily routine and movement limitations to help decide what assessment or support may be appropriate.",
-          "Avoid forcing painful movements or starting exercises that have not been assessed for your situation.",
-          "Seek prompt medical advice if neck pain follows a significant injury or occurs with fever, severe headache, new weakness or other concerning symptoms.",
-        ],
-      },
-      {
-        slug: "planning-post-surgery-rehabilitation",
-        title: "Planning Physiotherapy After Surgery",
-        excerpt:
-          "Questions to discuss before arranging rehabilitation at home following a surgical procedure.",
-        category: "Post-Surgery Recovery",
-        readTime: "5 min read",
-        serviceSlug: "post-surgery-rehab",
-        paragraphs: [
-          "Recovery needs depend on the operation, your health and the instructions provided by your surgeon or treating team.",
-          "Before starting physiotherapy, clarify any movement restrictions, weight-bearing instructions, wound-care precautions and follow-up requirements with your clinical team.",
-          "A home physiotherapy enquiry can help establish whether a visit is suitable for your current stage of recovery and whether the required support is available.",
-          "Do not change surgical precautions or rehabilitation instructions without guidance from your treating clinician.",
-        ],
-      }
     ],
     takeaway: "Small workspace changes and varied movement can be sensible first adjustments, but persistent or concerning symptoms deserve individual assessment rather than endless self-experimenting.",
     relatedService: "back-neck-pain",
