@@ -1,0 +1,15 @@
+import type { Metadata } from "next";
+import { Clock3, MapPin, MessageCircle, Phone } from "lucide-react";
+import BookingForm from "@/components/BookingForm";
+import { site } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Request a Physiotherapy Home Visit | Delhi NCR",
+  description: "Request a physiotherapy home visit in selected Delhi NCR areas. Share your locality and preferred time to check coverage and availability.",
+  alternates: { canonical: "/contact" }
+};
+
+export default function ContactPage() {
+  return <section className="py-14 md:py-24"><div className="container-wide"><div className="grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:gap-20"><div><div className="eyebrow">Contact & booking</div><h1 className="display-title mt-5">Let's start with <span className="text-forest">a conversation.</span></h1><p className="section-copy mt-6 max-w-lg">MotionWell offers home visits only, not appointments at a clinic. Share your locality and preferred time so we can check coverage and discuss suitability before confirming a visit.</p><div className="mt-9 space-y-5">{[{ icon: MapPin, title: "Home-visit zones", text: `${site.serviceAreas.join(", ")} — exact locality coverage must be confirmed.` }, { icon: MessageCircle, title: "WhatsApp enquiry", text: "Your home-visit enquiry opens in WhatsApp so you can review it before sending." }, { icon: Clock3, title: "Scheduling", text: "Preferred time is a request, not a confirmed appointment." }].map(({ icon: Icon, title, text }) => <div key={title} className="flex gap-4"><span className="icon-tile shrink-0"><Icon size={20} /></span><div><h2 className="font-bold">{title}</h2><p className="mt-1 text-sm leading-6 text-muted">{text}</p></div></div>)}
+            <div className="flex gap-4"><span className="icon-tile shrink-0"><Phone size={20} /></span><div><h2 className="font-bold">Call us</h2><div className="mt-2 grid gap-2 text-sm">{site.contactNumbers.map((number) => <a key={number.href} href={number.href} className="w-fit font-semibold text-forest underline-offset-4 hover:underline">{number.display} <span className="font-normal text-muted">({number.label})</span></a>)}</div></div></div></div><div className="mt-9 rounded-2xl border border-ink/10 p-5 text-xs leading-6 text-muted">For emergencies, severe or sudden symptoms, or rapidly worsening conditions, seek urgent medical care rather than waiting for a website reply.</div></div><div id="booking-form" className="scroll-mt-24 rounded-3xl bg-white p-6 shadow-soft sm:p-9"><h2 className="text-2xl font-bold">Request a home visit</h2><p className="mt-2 mb-7 text-sm leading-6 text-muted">Fields marked required help us understand your enquiry. This form does not store details on the website server, and submitting it does not confirm an appointment.</p><BookingForm /></div></div></div></section>;
+}
